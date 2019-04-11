@@ -5,6 +5,17 @@
 		<title></title>
 	</head>
 	<body>
-		
+		<script type="text/javascript">
+			var a=[2,3,1,4,7,9];
+			var b=[];
+			for(var i=0,len=a.length;i<len;){
+				if(a[i]>i++){
+					b.push(a.shift());
+				}else{
+					b.unshift(a.shift())
+				}
+			}
+			console.log(b);
+		</script>
 	</body>
 </html>
